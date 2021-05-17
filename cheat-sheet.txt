@@ -48,3 +48,9 @@ axios({
   .then(function (response) {
     response.data.pipe(fs.createWriteStream('ada_lovelace.jpg'))
   });
+
+// axios(url[, config])
+// Send a GET request (default method)
+axios('/user/12345');
+
+
