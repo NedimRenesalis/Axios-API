@@ -26,3 +26,15 @@ Promise.all([getUserAccount(), getUserPermissions()])
     const acct = results[0];
     const perm = results[1];
   });
+
+// The Axios API reference: Requests can be made by passing the relevant config to axios.
+
+// Send a POST request
+axios({
+  method: 'post',
+  url: '/user/12345',
+  data: {
+    firstName: 'Fred',
+    lastName: 'Flintstone'
+  }
+});
