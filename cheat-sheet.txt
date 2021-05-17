@@ -293,3 +293,11 @@ const instance = axios.create({
 instance.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 
 
+// URL-Encoding Bodies
+
+// By default, axios serializes JavaScript objects to JSON.
+
+// TypeScript - axios includes TypeScript definitions.
+
+import axios from 'axios';
+axios.get('/user?ID=12345');
